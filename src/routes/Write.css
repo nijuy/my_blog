@@ -1,0 +1,47 @@
+.writebox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wtitle {
+    padding: 10px 500px 10px 10px;
+}
+
+.wpost {
+    margin: 30px;
+    width : 668px;
+    height: 350px;
+    padding-left: 10px;
+}
+
+.wphoto{
+    margin-bottom: 30px;
+}
+
+.finishbutton,
+.canclebutton {
+    border: none;
+    padding: 10px 200px;
+    border-radius: 15px;
+    color: white;
+}
+
+.finishbutton{
+    background-color: #6CA7A8;
+}
+
+.canclebutton {
+    background-color: #FD9063;
+    margin-top: 20px;
+}
+
+.finishbutton:hover,
+.canclebutton:hover {
+    color: black;
+    font-weight: bolder;
+    border: 1px solid black;
+}
+
+

@@ -1,0 +1,81 @@
+.entire {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.timetotd {
+    text-align: center;
+    font-size: 32px;
+}
+
+.profilebox {
+    height: 331px;
+    width : 161px;
+    border: 1px solid #e9ecef;
+    border-radius: 15px;
+    background-color: white;
+    padding : 14px;
+}
+
+.email {
+    font-weight: 300;
+    margin: 0px;
+}
+
+.nick {
+    padding-top: 12px;
+    margin: 2px;
+}
+
+.profilebutton{
+    margin-top: 5px;
+    padding: 4px;
+}
+
+.writebutton {
+    margin-bottom: 10px;
+    padding: 4px;
+}
+
+.rightbox {
+    padding-left: 30px;
+    width: 932px;
+}
+
+.listbox {
+    display: flex;
+    flex-direction: row;
+    font-size : 13px;  
+    color: #8A837A;
+    background-color: white;
+    border: 1px solid #e9ecef;
+    border-radius: 15px;
+}
+
+.listbutton{
+    border : none;
+    background-color: white;
+    margin-right: -1px;
+    color: #8A837A;
+    padding-top : 0px;
+    padding-left: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.listbutton:hover {
+    text-decoration: underline 1px solid;
+}
+
+.editbutton {
+    border: 1px solid #e9ecef;
+    background-color: white;
+    padding: 5px 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.editbutton:hover {
+    cursor : pointer;
+}

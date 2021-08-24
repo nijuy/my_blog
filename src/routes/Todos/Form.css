@@ -1,0 +1,10 @@
+.form {
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #e9ecef;
+    width: 250px;
+}
+
+.form::placeholder {
+    opacity: 0.4;
+}

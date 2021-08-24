@@ -1,0 +1,64 @@
+.loginbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    border-radius: 15px;
+}
+
+.ltext{
+    font-size: 28px;
+    font-weight: lighter;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.inputbox {
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #F5DCCD;
+    margin: 10px;
+}
+
+.inputbox::placeholder {
+    opacity: 0.4;
+}
+
+.lbutton{
+    border: none;
+    padding: 6px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.ctext{
+    font-size: 12px;
+    opacity: 0.5;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.manual {
+    display: flex;
+    flex-direction: column;
+}
+
+.mbutton {
+    margin-top: 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: #e9ecef;
+    color: black;
+    padding : 10px;
+}
+
+.mbutton:active {
+    background-color: #F5DCCD;
+}
+
+.exp{
+    text-align: center;
+}

@@ -1,0 +1,12 @@
+.todo-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 14px;
+}
+
+.todo-text {
+    margin: 0px 120px 0px 120px;
+}
+

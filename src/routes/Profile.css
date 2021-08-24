@@ -1,0 +1,101 @@
+html {
+    background-color: #FFF6F0;
+}
+
+.boxes{
+    width: 900px;
+    margin-left: 20%;
+}
+
+.pbutton,
+.cbutton {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.b,
+.c {
+    border: none;
+    border-radius: 15px;
+    background-color: #e9ecef;
+    color: black;
+    padding : 10px;
+}
+
+.b:active,
+.c:active {
+    background-color: #F5DCCD;
+}
+
+.eentire {
+    display: flex;
+    flex-direction: column;
+}
+
+.editext {
+    font-size: 14px;
+    background-color: #F5DCCD;
+    padding : 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.editbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.image {
+    border: 1px solid;
+}
+
+.image, 
+.image-upload, 
+.newnick {
+    margin: 5px;
+}
+
+.newnick {
+    padding-top: 6px;
+    padding-bottom: 8px;
+    text-align: center;
+
+    border: none;
+    border-radius: 15px;
+    background-color: #f8f9fa;
+}
+
+.newprofile,
+.cancleprofile,
+.deleteblog,
+.cancledelete {
+    color: white;
+    margin-top: 15px;
+    width: 177px;
+    border: none;
+    border-radius: 15px;
+
+    padding-top: 3px;
+    padding-bottom: 4px;
+}
+
+.newprofile, .deleteblog { background-color: #6CA7A8; }
+.cancleprofile, .cancledelete { background-color: #FD9063; }
+
+.newprofile:hover,
+.cancleprofile:hover,
+.deleteblog:hover,
+.cancledelete:hover {
+    font-weight: bolder;
+}
+
+.deletext {
+    text-align: center;
+    margin-top: 0px;
+}

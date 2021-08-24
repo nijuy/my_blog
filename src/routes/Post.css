@@ -1,0 +1,39 @@
+.one {
+    border : 1px #e9ecef solid;
+    background-color: white;
+    width : 850px;
+    margin-bottom: 30px;
+    padding : 0px 40px;
+}
+
+.postitle {
+    font-size: 28px;
+    margin-bottom: 14px;  
+}
+
+.writerntime {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 14px;
+}
+
+.text {
+    font-size: 15px;
+    padding-bottom: 30px;
+}
+
+.buttons{
+    margin-left: 755px;
+}
+
+.editNdelete {
+    width: 47px;
+    height: 27px;
+    padding-bottom: 3px;
+    border: 1px solid #e9ecef;
+    border-collapse : collapse;
+    background-color: white;
+    cursor: pointer;
+}
