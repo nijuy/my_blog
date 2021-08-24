@@ -67,12 +67,14 @@ const Auth = () => {
             <div className = 'manual'>
                 <button className = 'mbutton' onClick = {()=> {setManual(prev => !prev)}}> { manual ? '설명서 닫기' : '설명서 열기'} </button>
                 { manual && (
-                    <p className = 'exp'> 
-                        블로그에서 할 수 있는 일 <br/>
-                        1. 뭐뭐<br/>
-                        2. 무뭐뭠<br/>
-                        3. 뭐뭐뭐<br/>
-                        아무튼 나중에 채우기........................... 
+                    <p className = 'exp'>
+                        마이 블로그 설명서 💭<br/>
+                        <br/>1️⃣ 계정 생성 후 프로필을 설정해주세요<br/>
+                        (user는 초기 닉네임입니다.)<br/>
+                        (프로필 설정 : 홈 화면 왼쪽 프로필 박스의 '블로그관리' 버튼)<br/>
+
+                        <br/>2️⃣ 홈 화면 프로필 박스 아래 시계를 누르면 투두로 이동합니다<br/>
+                        하루 일정을 마이 블로그에 기록해보세요 (❁´◡`❁)
                     </p>
                 )}
             </div>

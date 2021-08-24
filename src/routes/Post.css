@@ -1,3 +1,56 @@
+.editboxx {
+    display: flex;
+    flex-direction: column;
+    border : 1px #e9ecef solid;
+    background-color: white;
+    padding: 0px 40px;
+    margin-bottom: 30px;
+}
+
+.editing {
+    display: flex;
+    flex-direction: column;
+}
+
+.titlebox,
+.postbox {
+    border: none;
+    padding: 5px 3px;
+    border : 1px #e9ecef solid;
+}
+
+.titlebox {
+    font-size: 28px;
+    margin: 23px 0px 14px;
+}
+
+.postbox {
+    font-size: 15px;
+    margin: 10px 0px 30px;
+}
+
+.ebutton,
+.ecbutton {
+    width: 47px;
+    height: 27px;
+    color: black;
+    margin-top: 15px;
+
+    border: none;
+    border-radius: 15px;
+
+    padding-top: 3px;
+    padding-bottom: 4px;
+}
+
+.ebutton:hover,
+.ecbutton:hover {
+    cursor: pointer;
+}
+.ecbutton {
+    margin-bottom: 23px;
+}
+
 .one {
     border : 1px #e9ecef solid;
     background-color: white;

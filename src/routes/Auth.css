@@ -61,4 +61,8 @@
 
 .exp{
     text-align: center;
+    background-color: white;
+    padding: 20px;
+    margin: 2px;
+    border-radius: 15px;
 }
