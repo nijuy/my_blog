@@ -9,7 +9,7 @@ const Navigation = () => {
     return(
         <nav>
             <ul className = 'menu'>
-                <li><button className = 'button'> 블로그 홈 </button></li>
+                <li><button className = 'button' onClick = {() => { history.push('/allblog');}}> 블로그 홈 </button></li>
                 <li><button className = 'button' onClick = {() => { history.push('/');}}> 내 블로그 </button> </li>
                 <li><button className = 'button' onClick = {() => {
                     authService.signOut();

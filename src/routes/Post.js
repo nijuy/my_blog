@@ -2,7 +2,7 @@ import { dbService } from 'fbase';
 import React, { useState } from 'react';
 import './Post.css';
 
-const Post = ({ post, userObj }) => {
+const Post = ({ post, userObj, isOwner }) => {
     const [nick, setNick] = useState(userObj.displayName);
     const [profile] = useState(userObj.photoURL);
     const [editing, setEditing] = useState(false);
@@ -94,16 +94,19 @@ const Post = ({ post, userObj }) => {
                     </div>
                     { post.photo && <img className = 'postphoto' src={post.photo} width = '200px' height = '200px' alt= {post.photo}/> }
                     <p className = 'text'> {post.post}</p>
+                    
                     <div className = 'buttons'>
+                        { isOwner &&
+                            <>
                             <button className = 'editNdelete' onClick = {toggleEditing}> 수정 </button>
                             <button className = 'editNdelete' onClick = {onDeleteClick}> 삭제 </button>
+                            </>
+                        }     
                     </div>
                     <br></br>
                 </div> 
             }
-            
         </div>
-        
     );
 }
 

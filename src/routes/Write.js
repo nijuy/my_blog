@@ -35,7 +35,7 @@ const Write = ({ userObj }) => {
             photo : attachment,
             createdAt : Date.now(),
             creator : userObj.uid,
-            nick : userObj.displayName
+            nick : userObj.email
         });
 
         history.push('/');

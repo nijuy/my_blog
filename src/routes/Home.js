@@ -18,13 +18,10 @@ const Home = ({ userObj }) => {
             let postArray = s.docs.map((d) => ({id : d.id, creator : d.creator , ...d.data()}));
             postArray = postArray.filter(i => i.creator === userObj.uid);
             postArray.sort(function(a, b) { return b.createdAt - a.createdAt; });
-            // postArray.sort((a,b) => {return b.createdAt - a.createdAt});
-            
             setTitles(postArray);
         })
     }, []);
 
-   
     if(name === null){ setName('user'); }
     
     return(
@@ -64,7 +61,7 @@ const Home = ({ userObj }) => {
                     }
                 </div>
                 <br></br>
-                <div className = 'posts'> { titles.map((p) => (<Post key = {p.createdAt} post = {p} userObj = {userObj} />))} </div>  
+                <div className = 'posts'> { titles.map(p => <Post key = {p.createdAt} post = {p} userObj = {userObj} isOwner = {true}/> )} </div>  
             </div>      
         </section>
     );

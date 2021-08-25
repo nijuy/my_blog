@@ -94,16 +94,16 @@ const Profile = ({ userObj, refreshUser }) => {
                 <button className = 'c' onClick = {() => { setCbutton(prev => !prev); }}> 회원 탈퇴 </button>
                 { cbutton && 
                     <div>
-                        <form className = 'editbox'>
-                            <p className = 'deletext'>
-                                ( 현재 로그인 중인 계정 : {userObj.email} )<br/><br/>
-                                회원 탈퇴시 작성한 글은 모두 삭제되며,<br/>
-                                삭제된 블로그는 복구가 불가능합니다.<br/>
-                                정말 삭제하시겠습니까?<br/>
-                            </p>
-                            <button className = 'deleteblog' onClick = {() => { onDelete(); }}> 확인 </button>
-                            <button className = 'cancledelete' onClick = {() => { setCbutton(prev => !prev); } }> 취소 </button>
-                        </form>
+                    <form className = 'editbox'>
+                        <p className = 'deletext'>
+                            ( 현재 로그인 중인 계정 : {userObj.email} )<br/><br/>
+                            회원 탈퇴시 작성한 글은 모두 삭제되며,<br/>
+                            삭제된 블로그는 복구가 불가능합니다.<br/>
+                            정말 삭제하시겠습니까?<br/>
+                        </p>
+                        <button className = 'deleteblog' onClick = {() => { onDelete(); }}> 확인 </button>
+                        <button className = 'cancledelete' onClick = {() => { setCbutton(prev => !prev); } }> 취소 </button>
+                    </form>
                     </div>}
             </div>
         </section>

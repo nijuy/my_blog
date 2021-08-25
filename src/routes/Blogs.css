@@ -1,0 +1,21 @@
+.eeentire{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.atext{
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    padding:3px 315px;
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+.atext h6 {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 0px;
+}

@@ -5,6 +5,7 @@ import Home from 'routes/Home';
 import Profile from 'routes/Profile';
 import Todo from 'routes/Todo';
 import Write from 'routes/Write';
+import Blogs from 'routes/Blogs';
 import Navigation from 'components/Navigation';
 
 function BlogRouter({ userObj, isLoggedIn, refreshUser }) {
@@ -25,6 +26,9 @@ function BlogRouter({ userObj, isLoggedIn, refreshUser }) {
                         </Route>
                         <Route exact path = '/write'>
                             <Write userObj = {userObj}/>
+                        </Route>
+                        <Route exact path = '/allblog'>
+                            <Blogs />
                         </Route>
                     </> 
                 ) : (
