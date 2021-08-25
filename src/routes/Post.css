@@ -47,6 +47,7 @@
 .ecbutton:hover {
     cursor: pointer;
 }
+
 .ecbutton {
     margin-bottom: 23px;
 }
@@ -64,6 +65,12 @@
     margin-bottom: 14px;  
 }
 
+
+.wrphoto {
+    margin: 8px 10px 0px 0px;
+    border-radius: 70%;
+}
+
 .writerntime {
     display: flex;
     flex-direction: row;
@@ -75,6 +82,10 @@
 .text {
     font-size: 15px;
     padding-bottom: 30px;
+}
+
+.postphoto{
+    margin-top: 20px;
 }
 
 .buttons{

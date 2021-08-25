@@ -16,9 +16,7 @@ function App() {
           photoURL : user.photoURL,
           updateProfile : (args) => user.updateProfile(args)
         });
-      } else {
-        setUserObj(null);
-      }
+      } else { setUserObj(null); }
       setInit(true);
     }
   )}, []);
