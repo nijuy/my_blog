@@ -28,7 +28,7 @@ function BlogRouter({ userObj, isLoggedIn, refreshUser }) {
                             <Write userObj = {userObj}/>
                         </Route>
                         <Route exact path = '/allblog'>
-                            <Blogs />
+                            <Blogs userObj = {userObj}/>
                         </Route>
                     </> 
                 ) : (

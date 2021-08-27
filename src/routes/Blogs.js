@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import './Blogs.css';
 import AllPost from './AllPost';
 
-const Blogs = () => {
+const Blogs = ({ userObj }) => {
     const [allpost, setAllPost] = useState([]);
     useEffect(() => {
         dbService.collection('posts').onSnapshot((s) => {
@@ -25,7 +25,7 @@ const Blogs = () => {
             </div>
             <br></br>
             <div className = 'allpost'> 
-                { allpost.map(p => <AllPost post = {p}/> )} 
+                { allpost.map(p => <AllPost userObj = {userObj} post = {p}/> )} 
             </div>  
         </div>
     );

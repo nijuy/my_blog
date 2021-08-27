@@ -1,12 +1,14 @@
 import { dbService } from 'fbase';
 import React, { useState } from 'react';
 import './Post.css';
+import CommentFactory from './CommentFactory';
 
 const Post = ({ post, userObj, isOwner }) => {
     const [nick, setNick] = useState(userObj.displayName);
     const [profile] = useState(userObj.photoURL);
     const [editing, setEditing] = useState(false);
-    
+    const [seeComment, setSeeComment] = useState(false);
+
     const date = new Date(post.createdAt);
     const [newTitle, setNewTitle] = useState(post.title);
     const [newPost, setNewPost] = useState(post.post);
@@ -14,7 +16,10 @@ const Post = ({ post, userObj, isOwner }) => {
 
     const onDeleteClick = async () => {
         const ok = window.confirm(`삭제한 글은 복구가 불가능합니다.\n글을 삭제하시겠습니까?`);
-        if (ok) { await dbService.doc(`posts/${post.id}`).delete(); }
+        if (ok) { 
+            await dbService.doc(`posts/${post.id}`).delete();
+            // await dbService.doc(`posts/${post.id}`).collection('comments').delete(); 
+        }
     }
     const toggleEditing = () => {
         setEditing(prev => !prev);
@@ -101,12 +106,14 @@ const Post = ({ post, userObj, isOwner }) => {
                             <button className = 'editNdelete' onClick = {onDeleteClick}> 삭제 </button>
                         </>     
                     </div>
+                    <div className = 'comment'>
+                        <button onClick = {() => {setSeeComment(prev => !prev)}} type = 'button'> { seeComment ? '댓글창 닫기' : '댓글창 열기'} </button>
+                        { seeComment && <CommentFactory userObj = {userObj} post = {post} isOwner = {isOwner}/> }
+                    </div>
                     <br></br>
                 </div> 
             }
-            {/* <div className = 'comment'>
-                
-            </div> */}
+            
         </div>
     );
 }

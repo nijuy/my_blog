@@ -1,0 +1,32 @@
+.commentbox {
+    background-color: #f3f3f3;
+    padding: 10px;
+}
+
+.cbox {
+    border: 1px solid #8A837A;
+    background-color: white;
+}
+
+.cwriter {
+    display: flex;
+    flex-direction: row;
+    margin : 10px 10px;
+}
+
+.cwriter h6 {
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+
+.cwp {
+    border-radius: 70%;
+    margin-right: 5px;
+}
+
+.wcomment {
+    padding: 3px;
+    width: 750px;
+    margin: 0px 10px 10px;
+    border: none;
+}

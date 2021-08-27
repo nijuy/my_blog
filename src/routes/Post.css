@@ -65,7 +65,6 @@
     margin-bottom: 14px;  
 }
 
-
 .wrphoto {
     margin: 8px 10px 0px 0px;
     border-radius: 70%;
@@ -100,4 +99,10 @@
     border-collapse : collapse;
     background-color: white;
     cursor: pointer;
+}
+
+.comment button {
+    border: 1px solid #e9ecef;
+    padding: 5px 7px;
+    background-color: white;
 }
