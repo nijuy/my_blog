@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const AllPost = ({ post }) => {
     const date = new Date(post.createdAt);
@@ -8,7 +8,6 @@ const AllPost = ({ post }) => {
         <div className = 'one'>
         <p className = 'postitle'> {post.title} </p>
         <div className = 'writerntime'>
-            {/* <img className = 'wrphoto' src = {profile} width = '30px' height = '30px' alt = {profile} /> */}
             <p>{writer }</p>
             <p className = 'time'> ・{date.getFullYear()}. {date.getMonth()+1}. {date.getDate()} {date.getHours()}:{date.getMinutes()} </p>
         </div>

@@ -1,0 +1,10 @@
+.loading {
+    margin: 20% 40%;
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: rgb(209, 209, 209) 0px 4px 8px;
+}

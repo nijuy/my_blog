@@ -8,10 +8,10 @@ const Write = ({ userObj }) => {
     const [title, setTitle] = useState('');
     const [post, setPost] = useState('');
     const [attachment, setAttactment] = useState(''); 
+    const [secret, setSecret] = useState(false);
 
     const onChange = (e) => {
         let { target : {name, value} } = e;
-        
         if(name === 'title'){ setTitle(value); } 
         else if(name = 'post'){ setPost(value); }
     }
@@ -35,7 +35,8 @@ const Write = ({ userObj }) => {
             photo : attachment,
             createdAt : Date.now(),
             creator : userObj.uid,
-            nick : userObj.email
+            nick : userObj.email,
+            secret : secret
         });
 
         history.push('/');
@@ -51,7 +52,7 @@ const Write = ({ userObj }) => {
                     onChange = {onChange}
                     placeholder = '제목을 입력하세요'
                     required
-                />
+                />              
                 <input className = 'wpost'
                     type = 'post'
                     value = {post}
@@ -61,6 +62,7 @@ const Write = ({ userObj }) => {
                     required
                 />
                 <input className = 'wphoto' type = 'file' accept = 'image/*' onChange = {onFileChange} />
+                <button className = 'secret' onClick = {() => {setSecret(prev => !prev)}} type = 'button'> { secret ? '비밀글 🔏' : '전체공개'} </button>  
                 <input className = 'finishbutton' type = 'submit' value = '작성' />
                 <button className = 'canclebutton' onClick = {() => {history.push('/');}}> 취소 </button>
             </form>

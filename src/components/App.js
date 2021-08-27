@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { authService } from "fbase";
 import BlogRouter from './Router';
+import './App.css';
 
 function App() {
   const[init, setInit] = useState(false);
@@ -33,7 +34,7 @@ function App() {
         isLoggedIn = {Boolean(userObj)}
         refreshUser = {refreshUser}
       /> :
-      '잠시만 기다려주세요 . . . '
+      <p className = 'loading'> 로딩중. . .  </p>
     }
     </>
   );

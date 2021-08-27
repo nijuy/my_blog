@@ -96,16 +96,17 @@ const Post = ({ post, userObj, isOwner }) => {
                     <p className = 'text'> {post.post}</p>
                     
                     <div className = 'buttons'>
-                        { isOwner &&
-                            <>
+                        <>
                             <button className = 'editNdelete' onClick = {toggleEditing}> 수정 </button>
                             <button className = 'editNdelete' onClick = {onDeleteClick}> 삭제 </button>
-                            </>
-                        }     
+                        </>     
                     </div>
                     <br></br>
                 </div> 
             }
+            {/* <div className = 'comment'>
+                
+            </div> */}
         </div>
     );
 }
