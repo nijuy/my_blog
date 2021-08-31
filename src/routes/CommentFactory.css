@@ -1,7 +1,32 @@
 .commentbox {
     background-color: #f3f3f3;
     padding: 10px;
+    margin-top: 10px;
+    position: relative;
 }
+
+/* 여기부터 */
+.onecomment {
+    border-bottom: 1px solid rgb(161, 161, 161);
+    padding: 10px 0px 0px;
+}
+
+.c_content {
+    margin : 0px 13px 24px;
+    font-weight: 500;
+} 
+
+.plusbutton{    
+    margin-left: 88.5%;
+    cursor: pointer;
+}
+
+.deletecomment {
+    margin-left: 90.5%;
+    position: absolute;
+    cursor: pointer;
+}
+/* 여기까지 Comment.js의 css 옮기기 귀찮아서 걍,. 여기 넣음*/
 
 .cbox {
     border: 1px solid #8A837A;
@@ -12,6 +37,7 @@
     display: flex;
     flex-direction: row;
     margin : 10px 10px;
+    font-size: 13px;
 }
 
 .cwriter h6 {

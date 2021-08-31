@@ -99,6 +99,7 @@
     border-collapse : collapse;
     background-color: white;
     cursor: pointer;
+    position: relative;
 }
 
 .comment button {

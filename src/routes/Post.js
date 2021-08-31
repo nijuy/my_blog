@@ -18,7 +18,6 @@ const Post = ({ post, userObj, isOwner }) => {
         const ok = window.confirm(`삭제한 글은 복구가 불가능합니다.\n글을 삭제하시겠습니까?`);
         if (ok) { 
             await dbService.doc(`posts/${post.id}`).delete();
-            // await dbService.doc(`posts/${post.id}`).collection('comments').delete(); 
         }
     }
     const toggleEditing = () => {
