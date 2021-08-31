@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { authService } from "fbase";
 import BlogRouter from './Router';
 import './App.css';
+import { Link } from 'react-router-dom';
 
 function App() {
   const[init, setInit] = useState(false);
@@ -30,10 +31,11 @@ function App() {
     <>
     { init ?
       <BlogRouter
-        userObj = {userObj}
-        isLoggedIn = {Boolean(userObj)}
-        refreshUser = {refreshUser}
-      /> :
+          userObj = {userObj}
+          isLoggedIn = {Boolean(userObj)}
+          refreshUser = {refreshUser}
+      />
+      :
       <p className = 'loading'> 로딩중. . .  </p>
     }
     </>

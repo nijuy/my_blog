@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Link, Route, Switch } from "react-router-dom";
 import Auth from 'routes/Auth';
 import Home from 'routes/Home';
 import Profile from 'routes/Profile';
@@ -15,7 +15,7 @@ function BlogRouter({ userObj, isLoggedIn, refreshUser }) {
             <Switch>
                 { isLoggedIn ? (
                     <>
-                        <Route exact path = "/">
+                        <Route exact path = '/'>
                             <Home userObj = {userObj} refreshUser = {refreshUser}/>
                         </Route>
                         <Route exact path = "/profile">
