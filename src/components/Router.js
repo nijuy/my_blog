@@ -11,7 +11,7 @@ import Navigation from 'components/Navigation';
 function BlogRouter({ userObj, isLoggedIn, refreshUser }) {
     return(
         <Router>
-            { isLoggedIn && <Navigation/> }
+            { isLoggedIn && <Navigation /> }
             <Switch>
                 { isLoggedIn ? (
                     <>
